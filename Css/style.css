@@ -1,0 +1,427 @@
+/* Start Global Rules */
+* {
+  -webkit-box-sizing: border-box;
+  -mos-box-sizing: border-box;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: "Work Sans", sans-serif;
+}
+/* End Global Rules */
+
+.container {
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.container-m1 {
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.container-m3 {
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.container-m4 {
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+/* Start header */
+header {
+  padding: 20px;
+}
+
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header .logo {
+  width: 150px;
+}
+
+header nav:hover .link {
+  display: block;
+}
+
+header nav:hover {
+  cursor: pointer;
+}
+
+header nav i {
+  color: #10cab7;
+  font-size: 30px;
+}
+
+header nav {
+  position: relative;
+  transition: all 1s;
+}
+
+header nav .link a {
+  text-decoration: none;
+  color: #000;
+  transition: 0.5s;
+}
+
+header nav .link a:hover {
+  padding-left: 25px;
+}
+
+header nav .link {
+  background-color: #f6f6f6;
+  min-width: 200px;
+  position: absolute;
+  right: 0;
+  top: calc(100% + 10px);
+  padding: 15px;
+  list-style-type: none;
+  display: none;
+  z-index: 9999;
+  transition: all 1s;
+}
+
+header nav .link::before {
+  content: "";
+  border-width: 10px;
+  border-style: solid;
+  border-color: transparent transparent #f6f6f6 transparent;
+  position: absolute;
+  right: 5px;
+  top: -20px;
+}
+
+header nav .link li {
+  display: block;
+  padding: 10px;
+}
+
+header nav .link li:not(:last-child) {
+  border-bottom: 1px solid #3aaa;
+}
+/* End header */
+/* Start Section */
+section {
+  background-image: url(../image/maw.jpg);
+  background-size: cover;
+  height: calc(100vh - 100px);
+  position: relative;
+}
+
+section .text {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  width: 320px;
+  max-width: 100%;
+}
+
+section .text h1 {
+  color: #10cab7;
+  margin: 0;
+}
+
+section .text p {
+  line-height: 1.6;
+}
+/* End Section */
+/* Start main1 */
+.main1 {
+  padding: 60px 0;
+  background-color: #f6f6f6;
+  text-align: center;
+}
+
+.main1 .card {
+  padding: 20px;
+}
+
+.main1 .card i {
+  color: #10cab7;
+}
+
+.main1 .card h3 {
+  font-weight: 800;
+  margin: 30px 0;
+}
+
+.main1 .card p {
+  font-weight: 500;
+  line-height: 1.6;
+}
+/* End main1 */
+
+/* Start all head */
+.head {
+  display: block;
+  width: 100%;
+  color: #ddd;
+  font-size: 100px;
+  text-align: center;
+  font-weight: 800;
+  letter-spacing: -3;
+  margin: 0;
+}
+
+.head + p {
+  margin: -25px 0 0;
+  text-align: center;
+}
+
+@media (max-width: 767px) {
+  .head {
+    font-size: 80px;
+  }
+  .head + p {
+    margin: -20px 0;
+  }
+}
+/* End all head */
+/* Start services */
+.main2 .services {
+  margin-top: 80px;
+}
+
+.card-serv i {
+  color: #10cab7;
+}
+.card-serv h3 {
+  font-weight: 800;
+  margin-top: -28px;
+  margin-left: 45px;
+}
+
+.card-serv p {
+  line-height: 1.6;
+}
+/* End services */
+/* Start Portfolio */
+.main3 {
+  background-color: #f6f6f6;
+  text-align: center;
+}
+
+.container-m3 {
+  margin-top: 80px;
+}
+
+.card-pro img {
+  width: 300px;
+  height: 200px;
+  max-width: 100%;
+}
+
+.main3 .card-pro {
+  background-color: #fff;
+  width: 300px;
+  margin: 30px auto 0;
+  border-radius: 20px;
+  text-align: left;
+}
+/* End Portfolio */
+/* Start about */
+.main4 {
+  margin-top: 80px;
+}
+
+.container-m4 {
+  margin-top: 100px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.main4 img {
+  width: 300px;
+  height: 220px;
+  padding-bottom: 10px;
+}
+
+.main4 .text-m4 {
+  margin-top: 50px;
+  margin-left: 40px;
+  line-height: 1.6;
+}
+
+.main4 .text-m4 hr {
+  background-color: #10cab7;
+}
+
+@media (max-width: 767px) {
+  .container-m4 {
+    margin-top: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .main4 img {
+    width: 250px;
+    height: 220px;
+    margin-left: 35px;
+  }
+
+  .main4 .text-m4 {
+    margin-top: 25px;
+    margin-left: 40px;
+    line-height: 1.6;
+  }
+}
+/* End about */
+/* Start contact */
+.main5 {
+  background-color: #f6f6f6;
+}
+.main5 h1 {
+  margin-top: 80px;
+  color: rgb(41, 41, 82);
+}
+
+.main5 .h2 {
+  color: #10cab7;
+}
+
+.meadi-m5 {
+  display: flex;
+}
+
+.meadi-m5 .icons {
+  margin-left: 15px;
+  margin-top: 22px;
+  color: rgb(41, 41, 82);
+  transition: all 1s;
+}
+
+.icons i:hover {
+  cursor: pointer;
+  transform: scale(1.2, 1.2);
+}
+
+.icons i {
+  margin-left: 10px;
+  font-size: 20px;
+}
+
+@media (max-width: 767px) {
+  .main5 {
+    text-align: center;
+  }
+  .meadi-m5 {
+    display: block;
+    text-align: center;
+  }
+  .icons {
+    margin-right: 10px;
+  }
+  .main5 h1 {
+    font-size: 25px;
+  }
+}
+/* End contact */
+/* Start footer */
+footer {
+  margin-top: 40px;
+  background-color: #021110;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  border-radius: 30px 30px 0 0;
+}
+
+footer span {
+  font-weight: bold;
+  color: #10cab7;
+}
+
+@media (max-width: 767px) {
+  footer {
+    font-size: 12px;
+  }
+}
+
+/* End footer */
+
+/* Small Screen */
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+  .container-m1 {
+    width: 750px;
+  }
+  .container-m3 {
+    width: 750px;
+  }
+}
+
+/* Medium Screen*/
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+  .container-m1 {
+    width: 970px;
+    display: flex;
+    justify-content: space-between;
+  }
+  .container-m3 {
+    width: 970px;
+    display: flex;
+    justify-content: space-between;
+  }
+  .container-m4 {
+    width: 970px;
+    display: flex;
+    justify-content: space-between;
+  }
+  .main2 .services {
+    margin-top: 20px;
+    display: flex;
+    text-align: left;
+  }
+  .main3 .portfolio {
+    width: 970px;
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+/* Large Screen*/
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+  .container-m1 {
+    width: 1170px;
+    display: flex;
+    justify-content: space-between;
+  }
+  .container-m3 {
+    width: 1170px;
+    display: flex;
+    justify-content: space-between;
+  }
+  .container-m4 {
+    width: 1170px;
+    display: flex;
+    justify-content: space-between;
+  }
+  .main2 .services {
+    margin-top: 20px;
+    display: flex;
+    text-align: left;
+  }
+  .main3 .portfolio {
+    width: 1170px;
+    display: flex;
+    justify-content: space-between;
+  }
+}
